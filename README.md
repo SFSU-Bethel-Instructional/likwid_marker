@@ -27,9 +27,20 @@ For the serial code:
 
 For the omp code:  
    likwid-perfctr -g FLOPS_DP -C N:0-3 ./likwid_marker_omp
+  
+<br></br>
+## Loading LIKWID on Perlmutter
 
+Run the below commands to load LIKWID in your environment before building and running your code.
 
-## building the code
+```
+module load e4s/22.05
+spack env activate cuda
+spack load likwid
+```
+
+<br></br>
+## Building the code
 
 CMAKE_PREFIX_PATH needs to point to the directory where LIKWID is installed, under which 
 there is a [.../]likwid-config.cmake file
