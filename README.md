@@ -53,6 +53,12 @@ module load likwid
 
 Now, you should be able to use cmake/make to build codes that have a measure of LIKWID awareness in the CMakeLists.txt file (such as this repository).
 
+Some LIKWID commands you can run on the login node just to check if the environment is set up. Try running:
+```
+likwid-topology
+```
+this command displays useful information about the way the CPU cores map to specific NUMA domains.
+
 <br></br>
 ## <a name="sallocNode">Allocating a CPU node on Perlmutter to use LIKWID to obtain h/w performance counter data
 
