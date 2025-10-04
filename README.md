@@ -41,7 +41,7 @@ likwid-perfctr -g FLOPS_DP -C N:0-3 ./likwid_marker_omp
   
 <br></br>
 
-##<a name="envSetup"> Set up your environment on Perlmutter to use LIKWID
+## <a name="envSetup"> Set up your environment on Perlmutter to use LIKWID
 
 Run the below commands to set up your environment to use LIKWID:
 
@@ -54,7 +54,7 @@ module load likwid
 Now, you should be able to use cmake/make to build codes that have a measure of LIKWID awareness in the CMakeLists.txt file (such as this repository).
 
 <br></br>
-##<a name="sallocNode">Allocating a CPU node on Perlmutter to use LIKWID to obtain h/w performance counter data
+## <a name="sallocNode">Allocating a CPU node on Perlmutter to use LIKWID to obtain h/w performance counter data
 
 Next, when you are ready to actually run the code with LIKWID enabled to obtain hw performance counter data, use this version of the salloc command:
 
